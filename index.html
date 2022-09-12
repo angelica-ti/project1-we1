@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List 1</title>
+    <style>
+        form {
+            width:90%;
+        }
+        fieldset{
+            width:40%;
+        }
+        .largefield{
+            width: 70.7%;
+        }
+        input[type="text"] {
+            margin: 2px;
+        }
+        table, tr, th, td{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            text-transform: uppercase;
+            font-family: Georgia;
+            color:white;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais:</legend>
+            <label for="fname">Nome:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="fname" name="fname" class="largefield"><br>
+            <label for="fdate">Data de Nascimento:</label>
+            <input type="date" id="fdate" name="fdate"><br>
+            <label for="faddress">Endereço:</label>
+            <input type="text" id="faddress" name="faddress" class="largefield"><br>
+            
+            <label for="fdistrict">Bairro:</label>
+            <input type="text" id="fdistrict" name="fdistrict">
+            <label for="fcity">&nbsp;&nbsp;Cidade:</label>
+            <input type="text" id="fcity" name="fcity"><br>
+
+            <label for="fdistrict">CEP:&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="fdistrict" name="fdistrict">
+            <label for="fcity">&nbsp;&nbsp;Estado:&nbsp;</label>
+            <select name="cars" id="cars">
+                <option value="Acre">Acre</option>
+                <option value="Alagoas">Alagoas</option>
+                <option value="Amapá">Amapá</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Ceará" selected="selected">Ceará</option>
+                <option value="Distrito Federal">Distrito</option>
+                <option value="Espirito Santo">Espirito</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Maranhão">Maranhão</option>
+                <option value="Mato Grosso">Mato Grosso</option>
+                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Pará">Pará</option>
+                <option value="Paraíba">Paraíba</option>
+                <option value="Paraná">Paraná</option>
+                <option value="Pernambuco">Pernambuco</option>
+                <option value="Piauí">Piauí</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Rondônia">Rondônia</option>
+                <option value="Roraima">Roraima</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Sergipe">Sergipe</option>
+                <option value="Tocantins">Tocantins</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Dados profissionais:</legend>
+            <p>Natureza do Cargo</p>
+            <input type="radio" id="fgerence" name="fnature" checked="checked">
+            <label for="fgerence">Gerência</label>
+            <input type="radio" id="ffinance" name="fnature">
+            <label for="ffinance">Financeiro</label>
+            <input type="radio" id="freception" name="fnature">
+            <label for="freception">Recepção</label>
+            <input type="radio" id="fadmin" name="fnature">
+            <label for="fadmin">Administração</label>
+            <input type="radio" id="fjur" name="fnature">
+            <label for="fjur">Jurídico</label>
+
+            <p>Área de interesse</p>
+            <input type="checkbox" id="fcomp" name="fcomp">
+            <label for="fcomp">Computação</label>
+            <input type="checkbox" id="fquim" name="fquim">
+            <label for="fquim">Química</label>
+            <input type="checkbox" id="fenv" name="fenv">
+            <label for="fenv">Meio Ambiente</label>
+            <input type="checkbox" id="feng" name="feng">
+            <label for="feng">Engenharia</label>
+            <input type="checkbox" id="fmat" name="fmat">
+            <label for="fmat">Matemática</label>
+            <p>Mini-currículo:</p>
+            <textarea id="fcurriculum" name="fcurriculum" rows="4" cols="50">
+            </textarea>
+        </fieldset>
+        <br>
+        <input type="button" value="Enviar"></input>
+        <input type="reset" value="Limpar"></input>
+    </form>
+    <br>
+    <h1>Tabela com Dados do Formulário</h1>
+    <table>
+        <tr>
+            <th colspan="10">Formulário</th>
+        </tr>
+        <tr>
+            <th colspan="7">Dados Pessoais</th>
+            <th colspan="3">Dados Profissionais</th>
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <th>Data de Nascimento</th>
+            <th>Endereço</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>CEP</th>
+            <th>Estado</th>
+
+
+            <th>Natureza do Cargo</th>
+            <th>Área de interesse</th>
+            <th>Mini-currículo</th>
+        </tr>
+        <tr>
+            <td>Angélica</td>
+            <td>03/03/1997</td>
+            <td>R.105C, n° 131</td>
+            <td>Acaracuzinho</td>
+            <td>Maracanaú</td>
+            <td>61920-210</td>
+            <td>Ceará</td>
+
+            <td>Gerência</td>
+            <td>Computação</td>
+            <td>4 anos de experiência com IA, ML e NLP.</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>01/02/1970</td>
+            <td>R.6, n° 38</td>
+            <td>Novo Oriente</td>
+            <td>Maracanaú</td>
+            <td>61920-070</td>
+            <td>Ceará</td>
+
+            <td>Gerência</td>
+            <td>Meio Ambiente</td>
+            <td>8 anos trabalhando com consultoria ambiental na área de Geoprocessamento.</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>04/05/1997</td>
+            <td>R.101, n° 13</td>
+            <td>Acaracuzinho</td>
+            <td>Maracanaú</td>
+            <td>61920-000</td>
+            <td>Ceará</td>
+
+            <td>Administração</td>
+            <td>Engenharia</td>
+            <td>7 anos de experiência na indústria como Técnico em Automação.</td>
+        </tr>
+    </table>
+</body>
+</html>
